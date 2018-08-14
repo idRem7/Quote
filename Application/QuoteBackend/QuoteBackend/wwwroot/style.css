@@ -24,6 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -47,4 +48,348 @@ table {
 	border-spacing: 0;
 }
 
-/*-------------------------------------------------------------------------------------------------- */
+/*------------------------------------------------------------------------------------- */
+
+body{
+		/* background-color: #0E2333; */
+		background-image: url("img/bckg.jpg");
+		background-attachment: fixed;
+}
+
+#global-wrap{
+	width: 100%;
+}
+
+header{
+	/* background-image: url("img/header.jpg"); */
+	/* background-color: #F2E3D5; */
+	background: linear-gradient(to right, #F2E3D5FF 1%, #07182699 40%, #00000000);
+	background-size: 170%;
+	height: 80px;
+	width: 1185px;
+	border-radius: 0 0 7px 7px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+.header-background-color-layer{
+	background-color: #F2614400;
+	height: 100%;
+	border-radius: 0 0 20px 20px;
+}
+
+.head-title{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 50px;
+	font-family: Georgia;
+	color: #071826;
+	margin-top: 12px;
+	margin-left: 60px;
+}
+
+.head-title.definition{
+	font-size: 20px;
+	margin: 32px 0 0 5px;
+
+}
+
+.main-content{
+	margin: 0 auto;
+	width: 1185px;
+	height: auto;
+	overflow: hidden;
+}
+
+section.section-wrap{
+	width: 760px;
+	float: left;
+	margin-right: 30px;
+	height: 1000px;
+	height: auto;
+	overflow: hidden;
+}
+
+section.quote{
+	display: block;
+	background-color: #F2F2F0CC;
+	height: auto;
+	overflow: hidden;
+	margin-bottom: 20px;
+	border-radius: 7px;
+	padding: 15px 20px 15px 20px;
+	font-size: 20px;
+	border: 1px;
+	border-style: solid;
+	border-color: #567D8C;
+	color: #071826;
+}
+
+section.editing{
+	display: block;
+	background-color: #F2F2F0CC;
+	height: auto;
+	overflow: hidden;
+	margin-bottom: 20px;
+	border-radius: 7px;
+	padding: 15px 20px 15px 20px;
+	font-size: 20px;
+	color: #071826;
+	border: 1px;
+	border-style: solid;
+	border-color: #567D8C;
+}
+
+.editing-category{
+	border: 0;
+	/* height: 20px; */
+	font-size: 18px;
+	text-align: left;
+	width: 160px;
+	border-radius: 5px;
+		color: #071826;
+}
+
+.editing-text{
+	box-sizing: border-box;
+	display: block;
+	border: 0;
+	margin: 15px 0px 15px 0;
+	resize: none;
+	width: 720px;
+	height: 200px;
+	padding: 10px;
+	text-align: left;
+	font-size: 20px;
+	font-style: italic;
+	border-radius: 5px;
+		color: #071826;
+}
+
+.editing-author{
+	display: inline;
+	float: right;
+	/* margin-right: 15px; */
+	padding: 3px 5px 1px 5px;
+	text-align: right;
+	border: 0;
+	font-style: italic;
+	font-size: 20px;
+	border-radius: 5px;
+	color: #071826;
+}
+
+.quote-separator{
+	margin: 0 3px 0 3px;
+}
+
+.section-second-text{
+	color: #164059;
+}
+
+.section-primary-text{
+		color: #071826;
+}
+
+.quote-text{
+	margin: 10px 10px 10px 0;
+	font-size: 25px;
+	text-align: right;
+	font-style: italic;
+}
+
+.quote-author{
+	display: inline-block;
+	text-align: right;
+	font-style: italic;
+	margin-right: 15px;
+	float: right;
+	font-weight: bold;
+}
+
+.quote-img-buttons-wrap{
+	display: inline-block;
+	float: right;
+	margin: 0px 0px 0 0;
+}
+
+img.quote-img-button{
+	height: 20px;
+}
+
+aside.right-wrap{
+	float: left;
+}
+
+aside.add-new-quote{
+	background-color: #F2F2F0CC;
+	width: 395px;
+	height: 550px;
+	height: auto;
+	overflow: hidden;
+	border-radius: 7px;
+	box-sizing: border-box;
+	padding: 22px;
+	border: 1px;
+	border-style: solid;
+	border-color: #567D8C;
+}
+
+aside.filter{
+	background-color: #F2F2F0CC;
+		margin-top: 20px;
+		border-radius: 7px;
+		height: auto;
+		overflow: hidden;
+		padding: 22px;
+		border: 1px;
+		border-style: solid;
+		border-color: #567D8C;
+}
+
+aside.time{
+	background-color: #F2F2F000;
+	margin-top: 20px;
+	border-radius: 7px;
+	height: auto;
+	overflow: hidden;
+	padding:  0 22px 15px 22px;
+}
+
+h2.aside-title{
+	display: inline-block;
+	color: white;
+	font-size: 30px;
+	font-family: Georgia;
+	margin: 0px 0px 20px 60px;
+	color: #071826;
+}
+
+h2.filter-title{
+	display: inline-block;
+	color: white;
+	font-size: 30px;
+	font-family: Georgia;
+	margin: 0px 0px 20px 118px;
+	color: #071826;
+}
+
+h2.time-title{
+	display: inline-block;
+	color: white;
+	font-size: 80px;
+	font-family: Georgia;
+	margin-left: 20px;
+}
+
+footer{
+	background: linear-gradient(to right, #F2E3D5FF 1%, #07182699 40%, #00000000);
+	height: 50px;
+	width: 1185px;
+	border-radius: 20px 20px 0 0;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+span.copyright{
+	display: inline-block;
+	text-align: right;
+	font-size: 20px;
+	margin-top: 15px;
+	margin-left: 60px;
+}
+
+a.copyright{
+	color: #071826;
+}
+
+.new-quote-form{
+	display: block;
+	/* margin-left: 22px; */
+	margin-bottom: 15px;
+	border-radius: 6px;
+	font-size: 20px;
+	outline: none;
+	border: none;
+	color: #071826;
+}
+
+#input-author{
+	box-sizing: border-box;
+	padding: 0 0 0 7px;
+	height: 35px;
+}
+
+#input-category{
+		width: 170px;
+		padding: 0 0 0 7px;
+		height: 35px;
+}
+
+#input-quote{
+	font-size: 17px;
+	resize: none;
+	box-sizing: border-box;
+	/* width: 350px; */
+	width: 100%;
+	height: 250px;
+	padding: 5px 5px 5px 7px;
+}
+
+#input-error{
+	border-radius: 0;
+	color: #F7574F;
+	margin-left: 5px;
+	width: 346px;
+}
+
+#add-submit-button{
+	display: block;
+	box-sizing: content-box;
+	color: #071826;
+	font-size: 25px;
+	text-align: center;
+	background-color: white;
+	margin: 20px 0 0px 105px;
+	padding: 7px 0;
+	width: 160px;
+	border-radius: 7px;
+}
+
+.filter-form{
+	display: block;
+	/* margin-left: 22px; */
+	margin-bottom: 15px;
+	border-radius: 6px;
+	font-size: 20px;
+	outline: none;
+	border: none;
+}
+
+#filter-author{
+	box-sizing: border-box;
+	padding: 0 0 0 7px;
+	height: 35px;
+}
+
+#filter-category{
+		width: 170px;
+		padding: 0 0 0 7px;
+		height: 35px;
+}
+
+.filter-buttons-wrap{
+	margin: 30px 0 0px 28px;
+}
+
+.filter-button{
+	display: inline-block;
+	box-sizing: content-box;
+	background-color: white;
+  color: #071826;
+	font-size: 25px;
+	text-align: center;
+	padding: 7px 0;
+	width: 140px;
+	border-radius: 7px;
+}

@@ -1,21 +1,141 @@
-﻿<!DOCTYPE html>
-<html>
+
+<!DOCTYPE html>
+<html lang="ru">
+
 <head>
     <meta charset="utf-8" />
+
+    <!-- Подключаем стили, скрипт, vue -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ################################### -->
+
     <title>Цитатник</title>
+
 </head>
+
 <body>
 
-  <!-- Подключаем стили, скрипт, vue -->
-  <link rel="stylesheet" href="style.css">
-  <script type="text/javascript" src="Vue.js"></script>
-  <script type="text/javascript" async src="quote.js"></script>
-  <!-- ################################### -->
+  <div id="global-wrap" >
 
+    <header>
+      <div class="header-background-color-layer">
+        <span class="head-title">Цитатник |</span>
+        <span class="head-title definition">Самый обычный цитатник.</span>
+      </div>
+    </header>
 
+    <!-- ######################################################## -->
 
-  <div id="app">
-    {{ message }}
+    <div class="main-content">
+
+      <section class="section-wrap">
+
+        <div class="" id="content-begin"> </div>
+        <!-- ########################################################## -->
+        <section class="quote">
+          <span class="quote-id section-second-text">#<span>47787</span>
+          </span>
+          <span class="quote-separator section-second-text">|</span>
+          <span class="quote-category section-second-text"> Мудрость</span>
+          <span class="quote-img-buttons-wrap">
+            <img class="quote-img-button" src="img/edit.png" alt="Edit">
+            <img class="quote-img-button" src="img/delete.png" alt="Delete">
+          </span>
+          <blockquote class="quote-text section-primary-text">
+            "<span>Безделье - это игрушка дьявола.</span>"
+          </blockquote>
+          <span class="quote-date section-second-text">08/08/2018</span>
+          <span class="quote-author section-primary-text">Кама Пуля</span>
+        </section>
+
+        <section class="quote">
+          <span class="quote-id section-second-text">#<span>1237</span>
+          </span>
+          <span class="quote-separator section-second-text">|</span>
+          <span class="quote-category section-second-text"> Не знаю</span>
+          <span class="quote-img-buttons-wrap">
+            <img class="quote-img-button" src="img/edit.png" alt="Edit">
+            <img class="quote-img-button" src="img/delete.png" alt="Delete">
+          </span>
+          <blockquote class="quote-text section-primary-text">
+            "<span>Я играю ради победы.</span>"
+          </blockquote>
+          <span class="quote-date section-second-text">08/08/2018</span>
+          <span class="quote-author section-primary-text">D.Va (Hannah Song)</span>
+        </section>
+        <!-- #################################################################### -->
+
+        <section class="editing">
+          <span class="quote-id section-second-text">#<span>1237</span>
+          </span>
+          <span class="quote-separator section-second-text">|</span>
+          <select class="editing-category">
+              <option value="">Не знаю</option>
+          </select>
+          <span class="quote-img-buttons-wrap">
+            <img class="quote-img-button" src="img/done.png" alt="Done">
+            <img class="quote-img-button" src="img/delete.png" alt="Cancel">
+          </span>
+          <textarea class="editing-text">Я играю ради победы.</textarea>
+          <span class="quote-date section-second-text">08/08/2018</span>
+          <input class="editing-author" value="D.Va (Hannah Song)">
+        </section>
+
+        <!-- ##################################################################### -->
+        <div class="" id="content-end"> </div>
+
+      </section>
+
+      <!-- #################################################################### -->
+
+      <aside class="right-wrap">
+
+        <aside class="add-new-quote">
+          <h2 class="aside-title">Добавить цитату</h2>
+          <form id="new-quote-form">
+            <input class="new-quote-form" id="input-author" placeholder="Автор">
+            <select class="new-quote-form" id="input-category">
+              <option selected>Категория</option>
+            </select>
+            <textarea class="new-quote-form" id="input-quote" placeholder="Текст цитаты"></textarea>
+            <span class="new-quote-form" id="input-error">Какая-то ошибка</span>
+            <span id="add-submit-button">Добавить</span>
+          </form>
+        </aside>
+
+      <!--############################################################################-->
+
+        <aside class="filter">
+          <h2 class="filter-title">Фильтр</h2>
+          <form id="filter-form">
+            <input class="filter-form" id="filter-author" placeholder="Автор">
+            <select class="filter-form" id="filter-category">
+              <option selected>Категории</option>
+            </select>
+            <div class="filter-buttons-wrap filter-form">
+              <span class="filter-button" id="filter-sumbit">Применить</span>
+              <span class="filter-button"id="filter-drop">Сбросить</span>
+            </div>
+          </form>
+        </aside>
+
+        <!--############################################################################-->
+
+        <aside class="time">
+          <h2 class="time-title">14:42:02</h2>
+        </aside>
+
+      </aside>
+
+    </div>
+
+    <footer>
+      <span class="copyright">
+        <a class="copyright" href="https://github.com/idRem7">(C) Ruslan Rakhimov</a>
+      </span>
+    </footer>
+
   </div>
 
 </body>

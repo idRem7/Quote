@@ -212,6 +212,7 @@ header{
 	border-radius: 0 0 7px 7px;
 	margin: 0 auto;
 	margin-bottom: 30px;
+  /* position: fixed; */
 }
 
 .header-background-color-layer{
@@ -463,12 +464,14 @@ h2.filter-title{
 }
 
 h2.time-title{
-	display: inline-block;
+	display: block;
 	color: white;
 	font-size: 80px;
 	/* font-family: Georgia; */
-	margin-left: 20px;
+	/* margin-left: 20px; */
+	margin: 0 auto;
 	font-family: 'Geometria Regular';
+	text-align: center;
 }
 
 footer{

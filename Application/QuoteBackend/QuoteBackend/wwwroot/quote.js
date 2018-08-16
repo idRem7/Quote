@@ -42,17 +42,18 @@ function GetRequest() {
     }
 
     request.onreadystatechange = function () {
-        //Надо сдеать обработчик
+
         if (request.readyState == 4) {
-            //Передаем управление обработчику пользователя
+
             serverAnswer = JSON.parse(request.responseText,function(key, value) {
                 if (key == 'CreateDate') return new Date(value);
                 return value;
               });
 
-
             if(serverAnswer.quotes.length > 0){
               data.quotesIsExist = true;
+            }else{
+              data.quotesIsExist = false;
             }
 
             data.quotes = serverAnswer.quotes;
@@ -60,8 +61,7 @@ function GetRequest() {
 
 
         } else {
-            //Оповещаем пользователя о загрузке
-            // document.getElementById('cas9').innerHTML = "Get change status..." + request.readyState;
+
         }
 
     }
@@ -156,17 +156,45 @@ function DeleteRequest(id) {
 
 }
 
+function refreshTime() {
+
+  var currentTime = new Date();
+  clock.time = "";
+
+  // if(currentTime.getHours() < 10){
+  //   clock.time += "\u00A0\u00A0";
+  // }
+  clock.time += currentTime.getHours() + ":";
+
+  if(currentTime.getMinutes() < 10){
+    clock.time += "0";
+  }
+  clock.time += currentTime.getMinutes() + ":";
+
+  if(currentTime.getSeconds() < 10){
+    clock.time += "0";
+  }
+
+  clock.time += currentTime.getSeconds();
+}
 // -----------------------------------------------------------------------------------------------------
 
+setInterval(refreshTime, 1000);
 GetRequest();
 
-var data = {};
-data.quotesIsExist = false;
-data.quotes = null;
-data.categories = null;
+var data = {
+  quotesIsExist: false,
+  quotes: null,
+  categories: null
+}
 
 var vm = new Vue({
   el: '#quotes-wrap',
+  data : data
+});
+
+var emptyBlock = new Vue({
+  el: '#empty-wrap',
   data : data
 });
 
@@ -195,5 +223,13 @@ Vue.component("quote-block",{
       <span class="quote-author section-primary-text">{{quote.Author}}</span>
     </section>
   `
+});
 
+var clock = {
+  time: ""
+};
+
+var clockElement = new Vue({
+  el: '#current-time',
+  data: clock
 });

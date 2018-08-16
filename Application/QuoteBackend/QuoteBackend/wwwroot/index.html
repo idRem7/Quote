@@ -31,58 +31,23 @@
 
     <div class="main-content">
 
-      <section class="section-wrap">
+      <section class="section-wrap" id="123">
 
-        <div class="" id="content-begin"> </div>
 
+        <div v-if="quotesIsExist" class="quotes" id="quotes-wrap">
+          <quote-block v-for="quote in quotes"
+            v-bind:quote="quote"
+            v-bind:key="quote.QuoteId"></quote-block>
+        </div>
+        <div v-else class="empty-section">
+          Цитат нет
+        </div>
         <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
         <!-- ########################################################## -->
-        <section class="quote">
-          <span class="quote-id section-second-text">#<span>47787</span>
-          </span>
-          <span class="quote-separator section-second-text">|</span>
-          <span class="quote-category section-second-text"> Мудрость</span>
-          <span class="quote-img-buttons-wrap">
-            <img class="quote-img-button" src="img/edit.png" alt="Edit"
-            onmouseout="this.src='img/edit.png'"
-            onmouseover="this.src='img/edit-hover.png'"
-            ondragstart="return false"><img
-            class="quote-img-button" src="img/delete.png" alt="Delete"
-            onmouseout="this.src='img/delete.png'"
-            onmouseover="this.src='img/delete-hover.png'"
-            ondragstart="return false">
-          </span>
-          <blockquote class="quote-text section-primary-text">
-            "<span>Безделье - это игрушка дьявола.</span>"
-          </blockquote>
-          <span class="quote-date section-second-text">08/08/2018</span>
-          <span class="quote-author section-primary-text">Кама Пуля</span>
-        </section>
 
-        <section class="quote">
-          <span class="quote-id section-second-text">#<span>1237</span>
-          </span>
-          <span class="quote-separator section-second-text">|</span>
-          <span class="quote-category section-second-text"> Не знаю</span>
-          <span class="quote-img-buttons-wrap">
-            <img class="quote-img-button" src="img/edit.png" alt="Edit"
-            onmouseout="this.src='img/edit.png'"
-            onmouseover="this.src='img/edit-hover.png'"
-            ondragstart="return false"><img
-            class="quote-img-button" src="img/delete.png" alt="Delete"
-            onmouseout="this.src='img/delete.png'"
-            onmouseover="this.src='img/delete-hover.png'"
-            ondragstart="return false">
-          </span>
-          <blockquote class="quote-text section-primary-text">
-            "<span>Я играю ради победы.</span>"
-          </blockquote>
-          <span class="quote-date section-second-text">08/08/2018</span>
-          <span class="quote-author section-primary-text">D.Va (Hannah Song)</span>
-        </section>
         <!-- #################################################################### -->
 
-        <section class="editing">
+        <!-- <section class="editing">
           <span class="quote-id section-second-text">#<span>1237</span>
           </span>
           <span class="quote-separator section-second-text">|</span>
@@ -103,14 +68,14 @@
           <span class="quote-date section-second-text">08/08/2018</span>
           <input class="editing-author" value="D.Va (Hannah Song)">
           <div class="editing-error">Ошибка</div>
-        </section>
+        </section> -->
         <!-- ######################################################################### -->
-        <section id="empty-section">
+        <!-- <section v-else="" id="empty-section">
           Цитат нет
-        </section>
+        </section> -->
         <!-- ##################################################################### -->
         <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-        <div class="" id="content-end"> </div>
+
 
       </section>
 

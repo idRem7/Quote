@@ -251,9 +251,10 @@ section.section-wrap{
 	height: 1000px;
 	height: auto;
 	overflow: hidden;
+	/* background-color: #F2F2F0CC; */
 }
 
-section#empty-section{
+.empty-section{
 	color: white;
 	text-align: center;
 	font-size: 50px;
@@ -344,9 +345,16 @@ section.editing{
 .editing-error{
 	margin-top: 10px;
 	font-family: 'Uninsta Medium';
-	color: #F7574F;
 	overflow: hidden;
 	word-break: break-all;
+}
+
+.error{
+		color: #F7574F;
+}
+
+.done{
+	color: #3C545E;
 }
 
 .quote-separator{

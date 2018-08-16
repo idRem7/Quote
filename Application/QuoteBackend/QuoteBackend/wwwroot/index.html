@@ -7,7 +7,9 @@
 
     <!-- Подключаем стили, скрипт, vue -->
     <link rel="stylesheet" href="style.css">
-
+    <script type="text/javascript" src="Vue.js"></script>
+    <script type="text/javascript" async src="quote.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <!-- ################################### -->
 
     <title>Цитатник</title>
@@ -32,6 +34,8 @@
       <section class="section-wrap">
 
         <div class="" id="content-begin"> </div>
+
+        <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
         <!-- ########################################################## -->
         <section class="quote">
           <span class="quote-id section-second-text">#<span>47787</span>
@@ -39,8 +43,14 @@
           <span class="quote-separator section-second-text">|</span>
           <span class="quote-category section-second-text"> Мудрость</span>
           <span class="quote-img-buttons-wrap">
-            <img class="quote-img-button" src="img/edit.png" alt="Edit">
-            <img class="quote-img-button" src="img/delete.png" alt="Delete">
+            <img class="quote-img-button" src="img/edit.png" alt="Edit"
+            onmouseout="this.src='img/edit.png'"
+            onmouseover="this.src='img/edit-hover.png'"
+            ondragstart="return false"><img
+            class="quote-img-button" src="img/delete.png" alt="Delete"
+            onmouseout="this.src='img/delete.png'"
+            onmouseover="this.src='img/delete-hover.png'"
+            ondragstart="return false">
           </span>
           <blockquote class="quote-text section-primary-text">
             "<span>Безделье - это игрушка дьявола.</span>"
@@ -55,8 +65,14 @@
           <span class="quote-separator section-second-text">|</span>
           <span class="quote-category section-second-text"> Не знаю</span>
           <span class="quote-img-buttons-wrap">
-            <img class="quote-img-button" src="img/edit.png" alt="Edit">
-            <img class="quote-img-button" src="img/delete.png" alt="Delete">
+            <img class="quote-img-button" src="img/edit.png" alt="Edit"
+            onmouseout="this.src='img/edit.png'"
+            onmouseover="this.src='img/edit-hover.png'"
+            ondragstart="return false"><img
+            class="quote-img-button" src="img/delete.png" alt="Delete"
+            onmouseout="this.src='img/delete.png'"
+            onmouseover="this.src='img/delete-hover.png'"
+            ondragstart="return false">
           </span>
           <blockquote class="quote-text section-primary-text">
             "<span>Я играю ради победы.</span>"
@@ -74,15 +90,26 @@
               <option value="">Не знаю</option>
           </select>
           <span class="quote-img-buttons-wrap">
-            <img class="quote-img-button" src="img/done.png" alt="Done">
-            <img class="quote-img-button" src="img/delete.png" alt="Cancel">
+            <img class="quote-img-button" src="img/done.png" alt="Done"
+            onmouseout="this.src='img/done.png'"
+            onmouseover="this.src='img/done-hover.png'"
+            ondragstart="return false"><img
+            class="quote-img-button" src="img/delete.png" alt="Cancel"
+            onmouseout="this.src='img/delete.png'"
+            onmouseover="this.src='img/delete-hover.png'"
+            ondragstart="return false">
           </span>
           <textarea class="editing-text">Я играю ради победы.</textarea>
           <span class="quote-date section-second-text">08/08/2018</span>
           <input class="editing-author" value="D.Va (Hannah Song)">
+          <div class="editing-error">Ошибка</div>
         </section>
-
+        <!-- ######################################################################### -->
+        <section id="empty-section">
+          Цитат нет
+        </section>
         <!-- ##################################################################### -->
+        <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
         <div class="" id="content-end"> </div>
 
       </section>
@@ -99,7 +126,7 @@
               <option selected>Категория</option>
             </select>
             <textarea class="new-quote-form" id="input-quote" placeholder="Текст цитаты"></textarea>
-            <span class="new-quote-form" id="input-error">Какая-то ошибка</span>
+            <div class="new-quote-form" id="input-error">Какая-то ошибка</div>
             <span id="add-submit-button">Добавить</span>
           </form>
         </aside>

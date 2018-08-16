@@ -50,6 +50,148 @@ table {
 
 /*------------------------------------------------------------------------------------- */
 
+/* @font-face {
+	font-family: 'Helvetica Neue Cyr Medium';
+	src: url('fonts/HelveticaNeueCyr-Medium.eot');
+	src: url('fonts/HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),
+	url('fonts/HelveticaNeueCyr-Medium.woff') format('woff'),
+	url('fonts/HelveticaNeueCyr-Medium.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+} */
+
+/* @font-face {
+	font-family: 'Helvetica Neue Cyr Roman';
+	src: url('fonts/HelveticaNeueCyr-Roman.eot');
+	src: url('fonts/HelveticaNeueCyr-Roman.eot?#iefix') format('embedded-opentype'),
+	url('fonts/HelveticaNeueCyr-Roman.woff') format('woff'),
+	url('fonts/HelveticaNeueCyr-Roman.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Sofia Medium';
+	src: url('fonts/Sofia-Medium.eot');
+	src: url('fonts/Sofia-Medium.eot?#iefix') format('embedded-opentype'),
+	url('fonts/Sofia-Medium.woff') format('woff'),
+	url('fonts/Sofia-Medium.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Pancetta Pro Medium';
+	src: url('fonts/PancettaPro-Medium.eot');
+	src: url('fonst/PancettaPro-Medium.eot?#iefix') format('embedded-opentype'),
+	url('fonts/PancettaPro-Medium.woff') format('woff'),
+	url('fonts/PancettaPro-Medium.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PT Serif Caption Regular';
+	src: url('fonts/PTSerif-Caption.eot');
+	src: url('fonts/PTSerif-Caption.eot?#iefix') format('embedded-opentype'),
+	url('fonts/PTSerif-Caption.woff') format('woff'),
+	url('PTSerif-Caption.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+} */
+
+@font-face {
+	font-family: 'Uninsta Normal';
+	src: url('fonts/Uninsta-Normal.eot');
+	src: url('fonts/Uninsta-Normal.eot?#iefix') format('embedded-opentype'),
+	url('fonts/Uninsta-Normal.woff') format('woff'),
+	url('fonts/Uninsta-Normal.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Uninsta Normal Italic';
+	src: url('fonts/Uninsta-NormalItalic.eot');
+	src: url('fonts/Uninsta-NormalItalic.eot?#iefix') format('embedded-opentype'),
+	url('fonts/Uninsta-NormalItalic.woff') format('woff'),
+	url('fonts/Uninsta-NormalItalic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*
+@font-face {
+	font-family: 'Uninsta Heavy';
+	src: url('fonts/Uninsta-Heavy.eot');
+	src: url('fonts/Uninsta-Heavy.eot?#iefix') format('embedded-opentype'),
+	url('fonts/Uninsta-Heavy.woff') format('woff'),
+	url('fonts/Uninsta-Heavy.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+} */
+
+/* @font-face {
+	font-family: 'Uninsta Bold';
+	src: url('fonts/Uninsta-Bold.eot');
+	src: url('fonts/Uninsta-Bold.eot?#iefix') format('embedded-opentype'),
+	url('fonts/Uninsta-Bold.woff') format('woff'),
+	url('fonts/Uninsta-Bold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Uninsta Demibold';
+	src: url('fonts/Uninsta-DemiBold.eot');
+	src: url('fonts/Uninsta-DemiBold.eot?#iefix') format('embedded-opentype'),
+	url('fonts/Uninsta-DemiBold.woff') format('woff'),
+	url('fonts/Uninsta-DemiBold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+} */
+
+@font-face {
+	font-family: 'Geometria Regular';
+	src: url('fonts/Geometria.eot');
+	src: url('fonts/Geometria.eot?#iefix') format('embedded-opentype'),
+	url('fonts/Geometria.woff') format('woff'),
+	url('fonts/Geometria.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Spectral Medium';
+	src: url('fonts/Spectral-Medium.eot');
+	src: url('fonts/Spectral-Medium.eot?#iefix') format('embedded-opentype'),
+	url('fonts/Spectral-Medium.woff') format('woff'),
+	url('fonts/Spectral-Medium.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Uninsta Medium';
+	src: url('fonts/Uninsta-Medium.eot');
+	src: url('fonts/Uninsta-Medium.eot?#iefix') format('embedded-opentype'),
+	url('fonts/Uninsta-Medium.woff') format('woff'),
+	url('fonts/Uninsta-Medium.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Uninsta Medium Italic';
+	src: url('fonts/Uninsta-MediumItalic.eot');
+	src: url('fonts/Uninsta-MediumItalic.eot?#iefix') format('embedded-opentype'),
+	url('fonts/Uninsta-MediumItalic.woff') format('woff'),
+	url('fonts/Uninsta-MediumItalic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* ---------------------------------------------------------------------------------- */
 body{
 		/* background-color: #0E2333; */
 		background-image: url("img/bckg.jpg");
@@ -82,10 +224,11 @@ header{
 	display: inline-block;
 	vertical-align: middle;
 	font-size: 50px;
-	font-family: Georgia;
+	/* font-family: Georgia; */
 	color: #071826;
 	margin-top: 12px;
 	margin-left: 60px;
+	font-family: 'Spectral Medium';
 }
 
 .head-title.definition{
@@ -108,6 +251,14 @@ section.section-wrap{
 	height: 1000px;
 	height: auto;
 	overflow: hidden;
+}
+
+section#empty-section{
+	color: white;
+	text-align: center;
+	font-size: 50px;
+	padding: 20px;
+	font-family: 'Geometria Regular';
 }
 
 section.quote{
@@ -147,7 +298,10 @@ section.editing{
 	text-align: left;
 	width: 160px;
 	border-radius: 5px;
-		color: #071826;
+	color: #071826;
+	font-family: 'Uninsta Medium';
+	outline: none;
+	border: none;
 }
 
 .editing-text{
@@ -159,52 +313,71 @@ section.editing{
 	width: 720px;
 	height: 200px;
 	padding: 10px;
+	padding-top: 5px;
 	text-align: left;
 	font-size: 20px;
-	font-style: italic;
+	/* font-style: italic; */
 	border-radius: 5px;
-		color: #071826;
+	color: #071826;
+	font-family: 'Uninsta Medium';
+	outline: none;
+	border: none;
 }
 
 .editing-author{
+	font-family: 'Uninsta Medium';
 	display: inline;
 	float: right;
 	/* margin-right: 15px; */
-	padding: 3px 5px 1px 5px;
+	padding: 0px 5px 1px 5px;
 	text-align: right;
 	border: 0;
-	font-style: italic;
-	font-size: 20px;
+	/* font-style: italic; */
+	font-size: 22px;
 	border-radius: 5px;
 	color: #071826;
+	width: 340px;
+	outline: none;
+	border: none;
+}
+
+.editing-error{
+	margin-top: 10px;
+	font-family: 'Uninsta Medium';
+	color: #F7574F;
+	overflow: hidden;
+	word-break: break-all;
 }
 
 .quote-separator{
 	margin: 0 3px 0 3px;
 }
 
-.section-second-text{
-	color: #164059;
-}
-
-.section-primary-text{
-		color: #071826;
-}
-
 .quote-text{
 	margin: 10px 10px 10px 0;
 	font-size: 25px;
 	text-align: right;
-	font-style: italic;
+	/* font-style: italic; */
+}
+
+.section-primary-text{
+	color: #071826;
+	font-family: 'Uninsta Medium';
+}
+
+.section-second-text{
+	color: #164059;
+	font-family: 'Uninsta Normal';
 }
 
 .quote-author{
 	display: inline-block;
 	text-align: right;
-	font-style: italic;
+	/* font-style: italic; */
 	margin-right: 15px;
 	float: right;
 	font-weight: bold;
+	font-family: 'Uninsta Normal';
 }
 
 .quote-img-buttons-wrap{
@@ -215,6 +388,8 @@ section.editing{
 
 img.quote-img-button{
 	height: 20px;
+	user-select: none;
+	margin-left: 2px;
 }
 
 aside.right-wrap{
@@ -229,10 +404,11 @@ aside.add-new-quote{
 	overflow: hidden;
 	border-radius: 7px;
 	box-sizing: border-box;
-	padding: 22px;
+	padding: 15px 22px;
 	border: 1px;
 	border-style: solid;
 	border-color: #567D8C;
+	overflow: hidden;
 }
 
 aside.filter{
@@ -241,10 +417,12 @@ aside.filter{
 		border-radius: 7px;
 		height: auto;
 		overflow: hidden;
-		padding: 22px;
+		padding: 15px 22px;
+		padding-right: 20px;
 		border: 1px;
 		border-style: solid;
 		border-color: #567D8C;
+		overflow: hidden;
 }
 
 aside.time{
@@ -259,27 +437,30 @@ aside.time{
 h2.aside-title{
 	display: inline-block;
 	color: white;
-	font-size: 30px;
-	font-family: Georgia;
-	margin: 0px 0px 20px 60px;
+	font-size: 35px;
+	/* font-family: Georgia; */
+	margin: 0px 0px 20px 32px;
 	color: #071826;
+	font-family: 'Geometria Regular';
 }
 
 h2.filter-title{
 	display: inline-block;
 	color: white;
-	font-size: 30px;
-	font-family: Georgia;
-	margin: 0px 0px 20px 118px;
+	font-size: 35px;
+	/* font-family: Georgia; */
+	margin: 0px 0px 20px 110px;
 	color: #071826;
+	font-family: 'Geometria Regular';
 }
 
 h2.time-title{
 	display: inline-block;
 	color: white;
 	font-size: 80px;
-	font-family: Georgia;
+	/* font-family: Georgia; */
 	margin-left: 20px;
+	font-family: 'Geometria Regular';
 }
 
 footer{
@@ -294,13 +475,23 @@ footer{
 span.copyright{
 	display: inline-block;
 	text-align: right;
-	font-size: 20px;
+	font-size: 25px;
 	margin-top: 15px;
 	margin-left: 60px;
+	font-family: 'Spectral Medium';
 }
 
 a.copyright{
 	color: #071826;
+	text-decoration: none;
+}
+
+a.copyright:hover{
+	text-decoration: underline;
+}
+
+option{
+	background-color: #000000;
 }
 
 .new-quote-form{
@@ -312,16 +503,19 @@ a.copyright{
 	outline: none;
 	border: none;
 	color: #071826;
+	font-family: 'Uninsta Medium';
 }
 
 #input-author{
 	box-sizing: border-box;
 	padding: 0 0 0 7px;
 	height: 35px;
+	font-size: 23px;
+	width: 350px;
 }
 
 #input-category{
-		width: 170px;
+	width: 350px;
 		padding: 0 0 0 7px;
 		height: 35px;
 }
@@ -341,19 +535,31 @@ a.copyright{
 	color: #F7574F;
 	margin-left: 5px;
 	width: 346px;
+	height: auto;
+	overflow: hidden;
+	display: block;
+	word-break: break-all;,
 }
 
 #add-submit-button{
 	display: block;
-	box-sizing: content-box;
+	box-sizing: border-box;
 	color: #071826;
 	font-size: 25px;
 	text-align: center;
 	background-color: white;
 	margin: 20px 0 0px 105px;
-	padding: 7px 0;
+	height: 40px;
+	padding-top: 7px;
 	width: 160px;
 	border-radius: 7px;
+	font-family: 'Geometria Regular';
+	vertical-align: middle;
+	user-select: none;
+}
+
+#add-submit-button:hover{
+	background-color: #F5F5F5;
 }
 
 .filter-form{
@@ -364,32 +570,47 @@ a.copyright{
 	font-size: 20px;
 	outline: none;
 	border: none;
+	font-family: 'Uninsta Medium';
 }
 
 #filter-author{
+	color: #071826;
 	box-sizing: border-box;
 	padding: 0 0 0 7px;
 	height: 35px;
+	font-size: 23px;
+	width: 350px;
 }
 
 #filter-category{
-		width: 170px;
-		padding: 0 0 0 7px;
-		height: 35px;
+	color: #071826;
+	width: 350px;
+	padding: 0 0 0 7px;
+	height: 35px;
+	font-size: 23px;
 }
 
 .filter-buttons-wrap{
-	margin: 30px 0 0px 28px;
+	margin: 20px 0 0px 27px;
 }
 
 .filter-button{
 	display: inline-block;
-	box-sizing: content-box;
+	box-sizing: border-box;
 	background-color: white;
   color: #071826;
 	font-size: 25px;
 	text-align: center;
-	padding: 7px 0;
 	width: 140px;
+	height: 40px;
+	padding-top: 7px;
 	border-radius: 7px;
+	font-family: 'Geometria Regular';
+	font-size: 22px;
+	margin-right: 7px;
+	user-select: none;
+}
+
+.filter-button:hover{
+	background-color: #F5F5F5;
 }

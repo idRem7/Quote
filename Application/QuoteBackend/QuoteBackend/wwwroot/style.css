@@ -298,7 +298,7 @@ section.editing{
 	/* height: 20px; */
 	font-size: 18px;
 	text-align: left;
-	width: 160px;
+	width: 240px;
 	border-radius: 5px;
 	color: #071826;
 	font-family: 'Uninsta Medium';
@@ -338,7 +338,7 @@ section.editing{
 	font-size: 22px;
 	border-radius: 5px;
 	color: #071826;
-	width: 340px;
+	width: 400px;
 	outline: none;
 	border: none;
 }
@@ -348,14 +348,7 @@ section.editing{
 	font-family: 'Uninsta Medium';
 	overflow: hidden;
 	word-break: break-all;
-}
-
-.error{
-		color: #F7574F;
-}
-
-.done{
-	color: #3C545E;
+	white-space: pre-wrap;
 }
 
 .quote-separator{
@@ -366,6 +359,7 @@ section.editing{
 	margin: 10px 10px 10px 0;
 	font-size: 25px;
 	text-align: right;
+	white-space: pre-wrap;
 	/* font-style: italic; */
 }
 
@@ -478,7 +472,7 @@ footer{
 	background: linear-gradient(to right, #F2E3D5FF 1%, #07182699 40%, #00000000);
 	height: 50px;
 	width: 1185px;
-	border-radius: 20px 20px 0 0;
+	border-radius: 7px 7px 0 0;
 	margin: 0 auto;
 	margin-top: 30px;
 }
@@ -501,8 +495,13 @@ a.copyright:hover{
 	text-decoration: underline;
 }
 
-option{
-	background-color: #000000;
+option:checked{
+	background-color: #00000033;
+}
+
+option:hover{
+	background-color: #293940;
+	color: white;
 }
 
 .new-quote-form{
@@ -543,13 +542,14 @@ option{
 
 #input-error{
 	border-radius: 0;
-	color: #F7574F;
-	margin-left: 5px;
+	/* color: #F7574F; */
+	margin: 0 0 0 5px;
 	width: 346px;
 	height: auto;
 	overflow: hidden;
 	display: block;
-	word-break: break-all;,
+	/* word-break: break-all;, */
+	white-space: pre-wrap;
 }
 
 #add-submit-button{
@@ -559,7 +559,7 @@ option{
 	font-size: 25px;
 	text-align: center;
 	background-color: white;
-	margin: 20px 0 0px 105px;
+	margin: 10px 0 0px 105px;
 	height: 40px;
 	padding-top: 7px;
 	width: 160px;
@@ -597,7 +597,8 @@ option{
 	color: #071826;
 	width: 350px;
 	padding: 0 0 0 7px;
-	height: 35px;
+	/* height: 35px; */
+	height: 120px;
 	font-size: 23px;
 }
 
@@ -624,4 +625,12 @@ option{
 
 .filter-button:hover{
 	background-color: #F5F5F5;
+}
+
+.error{
+	color: #F7574F;
+}
+
+.done{
+	color: #3C545E;
 }

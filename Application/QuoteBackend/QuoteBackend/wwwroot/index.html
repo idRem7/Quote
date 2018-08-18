@@ -33,9 +33,8 @@
 
       <section class="section-wrap" id="123">
 
-
         <div v-if="quotesIsExist" class="quotes" id="quotes-wrap">
-          <quote-block v-for="quote in quotes"
+          <quote-block v-for="quote in filterQuotes"
             v-bind:quote="quote"
             v-bind:key="quote.QuoteId"></quote-block>
         </div>
@@ -43,40 +42,6 @@
           <!-- v-else не работает, поэтому костыли -->
           Цитат нет
         </div>
-        <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-        <!-- ########################################################## -->
-
-        <!-- #################################################################### -->
-
-        <!-- <section class="editing">
-          <span class="quote-id section-second-text">#<span>1237</span>
-          </span>
-          <span class="quote-separator section-second-text">|</span>
-          <select class="editing-category">
-              <option value="">Не знаю</option>
-          </select>
-          <span class="quote-img-buttons-wrap">
-            <img class="quote-img-button" src="img/done.png" alt="Done"
-            onmouseout="this.src='img/done.png'"
-            onmouseover="this.src='img/done-hover.png'"
-            ondragstart="return false"><img
-            class="quote-img-button" src="img/delete.png" alt="Cancel"
-            onmouseout="this.src='img/delete.png'"
-            onmouseover="this.src='img/delete-hover.png'"
-            ondragstart="return false">
-          </span>
-          <textarea class="editing-text">Я играю ради победы.</textarea>
-          <span class="quote-date section-second-text">08/08/2018</span>
-          <input class="editing-author" value="D.Va (Hannah Song)">
-          <div class="editing-error">Ошибка</div>
-        </section> -->
-        <!-- ######################################################################### -->
-        <!-- <section v-else="" id="empty-section">
-          Цитат нет
-        </section> -->
-        <!-- ##################################################################### -->
-        <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
-
 
       </section>
 
@@ -87,13 +52,15 @@
         <aside class="add-new-quote" id="new-quote">
           <h2 class="aside-title">Добавить цитату</h2>
           <form id="new-quote-form">
-            <input class="new-quote-form" id="input-author" placeholder="Автор">
-            <select class="new-quote-form" id="input-category">
-              <option selected>Категория</option>
+            <input v-model="author" class="new-quote-form" id="input-author" placeholder="Автор (От 2 до 50 знаков)">
+            <select v-model="category" class="new-quote-form" id="input-category">
+              <option selected disabled value=0>Категория</option>
+              <option v-for="categoryIterator in categories"
+                v-bind:value="categoryIterator.CategoryId">{{categoryIterator.Name}}</option>
             </select>
-            <textarea class="new-quote-form" id="input-quote" placeholder="Текст цитаты"></textarea>
-            <div class="new-quote-form" id="input-error">Какая-то ошибка</div>
-            <span id="add-submit-button">Добавить</span>
+            <textarea v-model="text" class="new-quote-form" id="input-quote" placeholder="Текст цитаты (минимум 20 знаков, запрещены символы < и >)"></textarea>
+            <div class="new-quote-form" v-bind:class="{error: !isCorrectData, done: isCorrectData}" id="input-error">{{errorMessage}}</div>
+            <span v-on:click="validateInput" id="add-submit-button">Добавить</span>
           </form>
         </aside>
 
@@ -102,13 +69,15 @@
         <aside class="filter" id="quotes-filter">
           <h2 class="filter-title">Фильтр</h2>
           <form id="filter-form">
-            <input class="filter-form" id="filter-author" placeholder="Автор">
-            <select class="filter-form" id="filter-category">
-              <option selected>Категории</option>
+            <input class="filter-form" id="filter-author" placeholder="Автор" v-model="selectAuthor">
+            <select v-model="selectCategories" class="filter-form" id="filter-category" multiple>
+              <option disabled>Категории</option>
+              <option v-for="category in categories"
+                v-bind:value="category.CategoryId">{{category.Name}}</option>
             </select>
             <div class="filter-buttons-wrap filter-form">
-              <span class="filter-button" id="filter-sumbit">Применить</span>
-              <span class="filter-button"id="filter-drop">Сбросить</span>
+              <span class="filter-button" id="filter-sumbit" v-on:click="applyFilter">Применить</span>
+              <span class="filter-button"id="filter-drop" v-on:click="dropFilter">Сбросить</span>
             </div>
           </form>
         </aside>

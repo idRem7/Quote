@@ -326,7 +326,7 @@ Vue.component("quote-block",{
           Text: this.text,
           Author: this.author,
           CategoryId: this.category,
-          CreateDate: this.quote.CreateDate.toJSON()
+          CreateDate: this.quote.CreateDate
         };
 
         PutRequest(this.quote.QuoteId ,newQuoteSend, this);
